@@ -23,12 +23,12 @@ export default function Produtos({navigation, route}){
         
       console.log("terminei a funcao")
     };
-      useEffect(()=>{handleClick()},[])
-      const jogo = produto
-    return(
-        <View style={styles.container}>
-            <Header home={()=> navigation.goBack("Home")}/>
-            <CardDetalhe img={jogo.imagens} descricao={jogo.descricao} preco={jogo.vlUnitario} /> 
-        </View>
-    )
+    useEffect(()=>{handleClick()},[])
+    const jogo = produto
+  return(
+      <View style={styles.container}>
+          <Header home={()=> navigation.goBack("Home")}/>
+          <CardDetalhe img={jogo.imagens} descricao={jogo.descricao} preco={jogo.vlUnitario} /> 
+      </View>
+  )
 }
